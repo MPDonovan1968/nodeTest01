@@ -1,0 +1,77 @@
+body{
+    margin: 40px 0px;
+    background-image: url("../images/overcastSoft.png");
+    font-family: sans-serif;
+}
+#mainDiv{
+    margin: 20px auto;
+    width: 60%;
+    max-width: 900px;;
+}
+h1{
+    font-size: 44px;
+    font-family: sans-serif;
+}
+#errorDiv{
+    text-align: center;
+    color:red;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    font-family: serif;
+    font-size: 1.2em;
+}
+.cntr{
+    padding-top: 20px;
+    display: block;
+    width:65%;
+    text-align: center;
+    margin: 0 auto;
+}
+#myPic{
+    float: right;
+    width: 150px;
+}
+#formDiv{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#weatherTable{
+    margin: 0 auto;
+}
+#weatherTable td{
+    width: 65%;
+
+    padding: 2px;
+    border-bottom: 1px solid gray;
+}
+#weatherTable tr{
+    padding: 4px;
+}
+
+.bold{
+    font-weight: bold;
+    color: gray;
+}
+.center{
+    text-align: center;
+}
+#linksDiv{
+    width: 100%;
+    text-align: center;
+}
+#footer{
+    background-color: #edf6fa;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
+}
+.wData{
+    font-weight: bold;
+    color: navy;
+}

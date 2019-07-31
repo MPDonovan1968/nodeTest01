@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Complete Node.js Course</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="/images/myCloud.png">
+
+
+
+</head>
+
+<body>
+    <div id="mainDiv">
+        {{>header}}
+<br><br>
+        <div id="formDiv">
+            <form id="myform" action="/weather">
+            <label for="city">City:</label>
+                <input name="city" id="city" type="text" placeholder="Pick A City">
+                <input type="submit" value="Get Weather">
+            </form>
+        </div>
+        <div id="errorDiv"></div>
+        <script>
+            if( "{{error}}" ){
+                console.log("error")
+                document.getElementById("errorDiv").innerHTML = "{{error}}";
+                }
+        </script>
+
+    </div>
+    {{>footer}}
+    <script src="js/formPage.js"></script>
+</body>
+
+</html>

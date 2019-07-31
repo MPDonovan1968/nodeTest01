@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Complete Node.js Course</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="/images/myCloud.png">
+
+
+
+</head>
+
+<body>
+    <div id="mainDiv">
+        {{>header}}
+
+        <p class="cntr">The weather for <b>{{placeName}}</b> is:</p>
+
+
+        <p class="cntr"><span class="bold">Weekly Summary:</span><br><span class="wData">{{summary}}</span></p>
+        <br>
+
+        <table id="weatherTable">
+            <tr>
+                <td class="bold">Summary:</td>
+                <td class="wData">{{currSumm}}</td>
+            </tr>
+            <tr>
+                <td class="bold">Temp:</td>
+                <td class="wData"> {{currTemp}}</td>
+            </tr>
+            <tr>
+
+            <tr>
+                <td class="bold">High Temp:</td>
+                <td class="wData"> {{highTemp}}</td>
+            </tr>
+            <tr>
+            <tr>
+                <td class="bold">High Temp Time:</td>
+                <td class="wData"> {{highTempTime}}</td>
+            </tr>
+            <tr>
+            <tr>
+                <td class="bold">Will Feel Like:</td>
+                <td class="wData"> {{highTempFeel}}</td>
+            </tr>
+            <tr>
+
+
+                <td class="bold">Humidity:</td>
+                <td class="wData">{{currHumidty}}</td>
+            </tr>
+            <tr>
+                <td class="bold">Wind Speed:</td>
+                <td class="wData">{{currWindSpeed}}</td>
+            </tr>
+            <tr>
+                <td class="bold">Wind Direction:</td>
+                <td class="wData">{{currWindDir}}</td>
+            </tr>
+            <tr>
+                <td class="bold" colspan="2">
+                    Minute to Minute:
+                </td>
+            </tr>
+            <tr>
+                <td class="center wData" colspan="2">{{minSumm}}</td>
+            </tr>
+            <tr>
+                <td class="bold" colspan="2">
+                    Hour to Hour:
+                </td>
+            </tr>
+            <tr>
+                <td class="center wData" colspan="2">{{hourSumm}}</td>
+            </tr>
+
+        </table>
+        <div class="cntr">
+            <a href="/weather">Pick Another City</a>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

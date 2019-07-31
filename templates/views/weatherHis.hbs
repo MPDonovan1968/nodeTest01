@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Complete Node.js Course</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="/images/myCloud.png">
+
+
+
+</head>
+
+<body>
+    <div id="mainDiv">
+        {{>header}}
+        <br><br>
+        <form id="formOne">
+            <label for="city">City(location)</label>
+            <input placeholder="Pick A Location" id="city" name="city">
+            <button id="myBtn" name="myBtn">Get Forecast</button>
+            <p id="summP"></p>
+      
+        </form>
+        {{>footer}}
+    </div>
+    <script src="http://localhost/js/jquery-3.4.1.js"></script>
+    <script src="/js/forecastHis.js"></script>
+</body>
+
+</html>
