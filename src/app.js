@@ -16,8 +16,6 @@ app.set('views', viewsPath);
 app.set('view engine', 'hbs');
 hbs.registerPartials(partialsPath);
 
-
-
 // static directory settings
 const publicDirectoryPath = path.join(__dirname, "../public");
 app.use(express.static(publicDirectoryPath));
