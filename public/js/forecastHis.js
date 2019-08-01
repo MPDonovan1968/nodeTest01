@@ -8,7 +8,7 @@ weatherForm.addEventListener("submit", (e) => {
         return "Error";
     }
     e.preventDefault();
-    fetch("http://localhost:3000/weatherFetch?city=" + city).then((response) => {
+    fetch("/weatherFetch?city=" + city).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 console.log(data.error)

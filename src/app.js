@@ -7,6 +7,7 @@ const getWeather = require('./getWeather');
 const author = "BobFromAkron"; // for passing into the templates 
 const app = express();
 
+const port = process.env.PORT || 3000;
 
 // handlebars settings
 // the default is 'views' in the root of the app dir. Here is where we customize that if we so desire
@@ -123,8 +124,8 @@ app.get("*", (req, res) => {
     res.render("myFourOhFour")
 })
 
-app.listen(3000, () => {
-    console.log('Started, listening...on port 3000');
+app.listen(port, () => {
+    console.log('Started, listening...on port ' + port);
 })
 
 const presentData = (response, place) => {

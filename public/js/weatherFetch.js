@@ -1,7 +1,7 @@
 const city = $("#hiddenCity").val();
 console.log("The city is:", city);
 
-url = "http://localhost:3000/weatherFetch?city="+city;
+url = "/weatherFetch?city="+city;
 
 
 
