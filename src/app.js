@@ -80,7 +80,7 @@ app.get("/weatherFetch", (req, res) => {
 })
 // **************************************************  his code
 app.get("/weatherHis", (req, res) => {
-    vars = { author: "BobFromAkron", title: "Weather Forecast (Mead's Code)`" }
+    vars = { author: "BobFromAkron", title: "Weather Forecast (Mead's Code)" }
     res.render("weatherHis", vars)
 })
 
