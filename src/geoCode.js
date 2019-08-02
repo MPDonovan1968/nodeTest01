@@ -1,7 +1,7 @@
 const request = require('request');
 
 const geoCode = (address, callbackFx) => {
-    const geoURL = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + address + ".json?access_token=pk.eyJ1IjoibXBkb25vdmFuMTk2OCIsImEiOiJjajFiZDVtcGYwOW4wMzNxdTVneDdmY2VmIn0.oABNPcFTHeyKn2-AVrzpMw&limit=1";
+    const geoURL = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + address + ".json?access_token=[]limit=1";
     request({ url: geoURL, json: true }, (error, response) => {
         if (error) {
             callbackFx(error, null); // underfined works as well
